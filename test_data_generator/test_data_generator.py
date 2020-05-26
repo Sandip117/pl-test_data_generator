@@ -160,7 +160,7 @@ class Test_data_generator(ChrisApp):
         if(len(options.dir)):
          str_srcDir=options.dir
         else:
-        str_srcDir  = '../data'
+         str_srcDir  = '../data'
 
         
         print('\nCopying files from:\n\t%s\n to:\n\t%s.....\n' % (str_srcDir, options.outputdir))
