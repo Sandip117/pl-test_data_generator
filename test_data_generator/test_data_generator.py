@@ -159,7 +159,7 @@ class Test_data_generator(ChrisApp):
         str_srcDir=""
         if(len(options.dir)):
          str_srcDir=options.dir
-       else:
+        else:
         str_srcDir  = '../data'
 
         
