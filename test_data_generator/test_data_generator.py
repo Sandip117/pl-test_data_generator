@@ -144,11 +144,6 @@ class Test_data_generator(ChrisApp):
         Define the CLI arguments accepted by this plugin app.
         Use self.add_argument to specify a new app argument.
         """
-        self.add_argument('--dir', 
-                          dest          = 'dir', 
-                          type          = ChrisApp.path, 
-                          optional      = False,
-                          help          = 'directory to be copied') 
 
     def run(self, options):
         """
@@ -156,11 +151,7 @@ class Test_data_generator(ChrisApp):
         """
         print(Gstr_title)
         print('Version: %s' % self.get_version())
-        str_srcDir=""
-        if(len(options.dir)):
-         str_srcDir=options.dir
-        else:
-         str_srcDir  = '../data'
+        str_srcDir  = '../data'
 
         
         print('\nCopying files from:\n\t%s\n to:\n\t%s.....\n' % (str_srcDir, options.outputdir))
