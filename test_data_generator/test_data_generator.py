@@ -144,7 +144,7 @@ class Test_data_generator(ChrisApp):
         Define the CLI arguments accepted by this plugin app.
         Use self.add_argument to specify a new app argument.
         """
-     self.add_argument('--dir', 
+        self.add_argument('--dir', 
                           dest          = 'dir', 
                           type          = ChrisApp.path, 
                           optional      = False,
